@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+    geomiam-api:
+        volumes:
+            - .:/usr/src/app
+        environment:
+            MYSQL_DATABASE: userapi
+            MYSQL_USER: groot
+            MYSQL_PASSWORD: IAMgroot
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - 3306:3306
